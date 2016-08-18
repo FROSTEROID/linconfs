@@ -16,6 +16,9 @@ alias lx="ls -lAhcX"
 alias lr="ls -AlhFR | grep -B 1 total"
 alias lt="ls -alhFt"
 
+#safety of files operations:
+alias cp="cp -i"
+
 #And some applications. Of cource, you need to install some of them first.
 alias gq="geeqie"
 
