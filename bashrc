@@ -1,7 +1,8 @@
 # Cute PromptString to see whoandwhereami:
-PS1='\[\e[0;32m\]\u\[\e[m\]\[\e[1;34m\][\w]\[\e[m\]$ '
-# And i don't want it to be too long. (For Bash>=4)
-PROMPT_DIRTRIM=3
+#PS1='\[\e[0;32m\]\u\[\e[m\]\[\e[1;34m\][\w]\[\e[m\]$ '
+PS1="\n\[\e[32;1m\]\u\[\e[32;1m\](\[\e[37;1m\]jobs:\j\[\e[32;1m\])\[\e[33;1m\] \t \[\e[34;1m\]\w\n$ \[\e[0m\]"
+# And i <s>don't</s> want it to be long. (For Bash>=4)
+PROMPT_DIRTRIM=0
 
 #Some sticky aliases for my Windows fapping to continue
 alias cd..="cd .."
@@ -16,20 +17,20 @@ alias lx="ls -lAhcX"
 alias lr="ls -AlhFR | grep -B 1 total"
 alias lt="ls -alhFt"
 
-#safety of files operations:
-alias cp="cp -i"
-
 #And some applications. Of cource, you need to install some of them first.
 alias gq="geeqie"
 
 #Grep them all!
-alias grep="grep --color"
+alias grep="grep --color=never"
 alias gep="grep -i"
+alias grepc="grep --color=always"
+alias gepc="grepc -i"
 
 #Some user's apps:
-alias qtox="~/.bin/qtox"
-alias sublimet='~/.bin/sublime/sublime_text'
+alias qtox="~/bin/qtox"
+alias sublimet='~/bin/sublime/sublime_text'
 alias yedde='java -jar ~/bin/yed.jar'
+alias ffde='~/bin/ffde/firefox_64/firefox'
 
 alias xxx="startx"
 #Go to Desktop at the start
@@ -48,7 +49,7 @@ alias sense="for ((; ; ))
 				done"
 
 
-#Shit for tcsh:
+#for tcsh:
 #set prompt = "\n%B%{\033[34m%}[%h] %d %D.%w.%Y %P\n%{\033[31m%}[%n][%m][%~]\n%{\033[30m%}%b"
 #my:
 #set prompt = "%{\033[36m%}%n %{\033[1;34m%}[%/] %{\033[33m%}(%P)\n%#%{\033[0m%} "
