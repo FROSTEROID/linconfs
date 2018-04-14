@@ -1,6 +1,6 @@
 # Cute PromptString to see whoandwhereami:
 #PS1='\[\e[0;32m\]\u\[\e[m\]\[\e[1;34m\][\w]\[\e[m\]$ '
-PS1="\n\[\e[32;1m\]\u\[\e[32;1m\](\[\e[37;1m\]jobs:\j\[\e[32;1m\])\[\e[33;1m\] \t \[\e[34;1m\]\w\n$ \[\e[0m\]"
+PS1="\n\[\e[32;1m\]\u@\H\[\e[32;1m\](\[\e[37;1m\]jobs:\j\[\e[32;1m\])\[\e[33;1m\] \t \[\e[34;1m\]\w\n$ \[\e[0m\]"
 # And i <s>don't</s> want it to be long. (For Bash>=4)
 PROMPT_DIRTRIM=0
 
