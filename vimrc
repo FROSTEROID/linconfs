@@ -3,6 +3,7 @@ set nocompatible " don't need old vi shit.
 
 set smartindent " autotab?
 
+set ignorecase " use (backslash)C for case-sensitive search
 
 " my lovely tab style:
 set tabstop=4
