@@ -7,7 +7,6 @@ PROMPT_DIRTRIM=0
 #Some sticky aliases for my Windows fapping to continue
 alias cd..="cd .."
 alias cd-="cd -"
-alias ipconfig="ifconfig"
 
 #Cute and fast listig for all!
 alias ls="ls --color"
