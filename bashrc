@@ -16,13 +16,18 @@ alias lx="ls -lAhcX"
 alias lr="ls -AlhFR | grep -B 1 total"
 alias lt="ls -alhFt"
 
-
 #Grep them all!
 alias grep="grep --color=never"
 alias gep="grep -i"
 alias grepc="grep --color=always"
 alias gepc="grepc -i"
 
+# git is love, git is life
+alias gs="git status"
+alias gd="git diff"
+alias gch="git checkout"
+alias gl="git log"
+alias gb="git branch"
 
 
 # Show sensors info every 3 seconds.
