@@ -29,6 +29,8 @@ alias gch="git checkout"
 alias gl="git log"
 alias gb="git branch"
 
+# stderr is not ERR enough sometimes
+rederr()(set -o pipefail;"$@" 2>&1>&3|sed $'s,.*,\e[31m&\e[m,'>&2)3>&1
 
 # Show sensors info every 3 seconds.
 # Need lm_sensors and some actions to be performed with sensors-detect. See Wiki firstly, please.
