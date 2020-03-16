@@ -1,0 +1,33 @@
+# Cute PromptString to see whoandwhereami:
+#PS1='\[\e[0;32m\]\u\[\e[m\]\[\e[1;34m\][\w]\[\e[m\]$ '
+PS1="\n\[\e[32;1m\]\u@\H\[\e[32;1m\](\[\e[37;1m\]jobs:\j\[\e[32;1m\])\[\e[33;1m\] \t \[\e[34;1m\]\w\n$ \[\e[0m\]"
+# And i <s>don't</s> **want** it to be long. (For Bash>=4)
+PROMPT_DIRTRIM=0
+
+#Some sticky aliases for my Windows fapping to continue
+alias cd..="cd .."
+alias cd-="cd -"
+
+#Cute and fast listig for all!
+alias ls="ls --color"
+alias l="ls -AFX"
+alias ll="ls -AlhF"
+alias lx="ls -lAhcX"
+alias lr="ls -AlhFR | grep -B 1 total"
+alias lt="ls -alhFt"
+
+#Grep them all!
+alias grep="grep --color=never"
+alias gep="grep -i"
+alias grepc="grep --color=always"
+alias gepc="grepc -i"
+
+# git is love, git is life
+alias gs="git status"
+alias gd="git diff"
+alias gch="git checkout"
+alias gl="git log"
+alias gb="git branch"
+
+# stderr is not ERR enough sometimes
+rederr()(set -o pipefail;"$@" 2>&1>&3|sed $'s,.*,\e[31m&\e[m,'>&2)3>&1
