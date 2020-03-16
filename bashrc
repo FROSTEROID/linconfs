@@ -16,8 +16,6 @@ alias lx="ls -lAhcX"
 alias lr="ls -AlhFR | grep -B 1 total"
 alias lt="ls -alhFt"
 
-#And some applications. Of cource, you need to install some of them first.
-alias gq="geeqie"
 
 #Grep them all!
 alias grep="grep --color=never"
@@ -25,15 +23,7 @@ alias gep="grep -i"
 alias grepc="grep --color=always"
 alias gepc="grepc -i"
 
-#Some user's apps:
-alias qtox="~/bin/qtox"
-alias sublimet='~/bin/sublime/sublime_text'
-alias yedde='java -jar ~/bin/yed.jar'
-alias ffde='~/bin/ffde/firefox_64/firefox'
 
-alias xxx="startx"
-#Go to Desktop at the start
-#cd Desktop
 
 # Show sensors info every 3 seconds.
 # Need lm_sensors and some actions to be performed with sensors-detect. See Wiki firstly, please.
