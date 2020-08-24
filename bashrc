@@ -1,3 +1,10 @@
+
+# don't mess up non-interactive calls
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
 # Cute PromptString to see whoandwhereami:
 #PS1='\[\e[0;32m\]\u\[\e[m\]\[\e[1;34m\][\w]\[\e[m\]$ '
 PS1="\n\[\e[32;1m\]\u@\H\[\e[32;1m\](\[\e[37;1m\]jobs:\j\[\e[32;1m\])\[\e[33;1m\] \t \[\e[34;1m\]\w\n$ \[\e[0m\]"
