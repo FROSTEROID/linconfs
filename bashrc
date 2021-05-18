@@ -35,6 +35,8 @@ alias gd="git diff"
 alias gch="git checkout"
 alias gl="git log"
 alias gb="git branch"
+# output somewhat looking like the list commits which are present on the current branch and not present on master
+alias commits="git log \`git status | head -n 1 | awk '{print \$3}'\` ^master | awk '/    / {print \$0}' | sed 's/    /- /g'"
 
 # stderr is not ERR enough sometimes
 rederr()(set -o pipefail;"$@" 2>&1>&3|sed $'s,.*,\e[31m&\e[m,'>&2)3>&1
